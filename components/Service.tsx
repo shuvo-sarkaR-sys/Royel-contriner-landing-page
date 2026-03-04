@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div className='py-20'>
         <h1 className='md:text-5xl text-4xl font-bold text-center '>WHY ROYAL RENTALS <span className='text-yellow-500'>BEST?</span></h1>
-        <p className='text-lg text-color text-center mt-4'>We're Halifax's go-to for reliable, affordable container solutions.</p>
+        <p className='text-lg text-color text-center mt-4'>{"We're Halifax's go-to for reliable, affordable container solutions."}</p>
         <div className='md:px-20 px-7 pt-12 flex gap-10 justify-center flex-wrap '>
             <div className=' flex flex-col  box-1  rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-yellow-200 border p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center transition-colors'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" w-8 text-yellow-500">

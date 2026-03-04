@@ -36,7 +36,7 @@ export default function Contact() {
           </h2>
 
           <p className="text-gray-500 text-center text-lg mb-16">
-Ready to get started? Send us a message and we'll provide a free quote within 24 hours.
+Ready to get started? Send us a message and {"we'll "}provide a free quote within 24 hours.
           </p>
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 ">
 
