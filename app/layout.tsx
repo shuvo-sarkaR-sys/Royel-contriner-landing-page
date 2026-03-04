@@ -7,7 +7,8 @@ import { Providers } from "../components/providers/providers";
 import { GoogleTagManager } from "@next/third-parties/google";
 import SegmentTracker from "@/components/analytics/SegmentTracker";
 import { Suspense } from "react";
-
+import Contact from "@/components/Contact"; 
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 const oswald = Oswald({ 
@@ -56,6 +57,9 @@ export default function RootLayout({
           {children}
           
         </Providers>
+        <Contact/>
+      <Footer/>
+
       </body>
       <Suspense>
         <SegmentTracker />

@@ -42,8 +42,7 @@ export default function Home() {
       <HeroSection  />
       <Service/>
       <OurContainar/>
-      <Contact/>
-      <Footer/>
+      
     </>
   );
 }
