@@ -79,7 +79,7 @@ Ready to get started? Send us a message and {"we'll "}provide a free quote withi
 
         {/* Left Side */}
         <div>
-         <h1 className="text-5xl font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
+         <h1 className="md:text-5xl text-2xl md:block hidden font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
 
           <div className="space-y-10 mt-14">
             <div className="flex gap-5">
@@ -125,6 +125,7 @@ Hammonds Plains, Nova Scotia, Canada</p>
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
         >
+         <h1 className="text-xl block md:hidden font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
 
           <select
             name="condition"
