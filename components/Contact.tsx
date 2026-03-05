@@ -134,7 +134,7 @@ Hammonds Plains, Nova Scotia, Canada</p>
             required
             className="w-full p-3 rounded-lg border focus:border-yellow-500"
           >
-            <option value="">Condition Preference?</option>
+            <option value="" disabled >Condition Preference?</option>
             <option value="Used">Used</option>
             <option value="New">Brand New</option>
             <option value="Modified">Modified</option>
@@ -159,7 +159,7 @@ Hammonds Plains, Nova Scotia, Canada</p>
             required
             className="w-full p-3 rounded-lg border focus:border-yellow-500"
           >
-            <option value="">When are you looking to purchase?</option>
+            <option value="" disabled>When are you looking to purchase?</option>
             <option value="ASAP">ASAP</option>
             <option value="Within 1 month">Within 1 month</option>
             <option value="Within 3 Months">Within 3 Months</option>
