@@ -79,7 +79,7 @@ Ready to get started? Send us a message and {"we'll "}provide a free quote withi
 
         {/* Left Side */}
         <div>
-         <h1 className="md:text-5xl text-2xl md:block hidden mt-0 md:mt-5 font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
+         <h1 className="md:text-5xl text-2xl md:block hidden mt-0 md:mt-5 font-semibold font-oswald">{"Feel free fillup this form. We'll get back to you soon."}</h1>
 
           <div className="space-y-10 md:mt-10 mt-0">
             <div className="flex gap-5">
