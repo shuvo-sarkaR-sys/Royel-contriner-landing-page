@@ -13,7 +13,7 @@ const Service = () => {
 </svg>
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Quality Guaranteed</h1>
-                <p className='text-color text-sm '>Every container is thoroughly inspected <br />to ensure it meets our high-quality <br /> standards before delivery.</p>  
+                <p className='text-color text-md '>Every container is thoroughly inspected <br />to ensure it meets our high-quality <br /> standards before delivery.</p>  
             </div>
               <div className=' flex flex-col box-1  rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468] border p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center transition-colors'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-truck text-[#BCA468]" viewBox="0 0 16 16">
@@ -21,7 +21,7 @@ const Service = () => {
 </svg>
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Fast Delivery</h1>
-                <p className='text-color text-sm '>Local Halifax-based operations mean <br />faster turnaround and delivery across<br /> Nova Scotia.</p>  
+                <p className='text-color  text-md'>Local Halifax-based operations mean <br />faster turnaround and delivery across<br /> Nova Scotia.</p>  
             </div>
               <div className=' flex flex-col box-1  rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468] border p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center  text-[#BCA468] transition-colors'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 text-[#BCA468]    ">
@@ -30,7 +30,7 @@ const Service = () => {
 
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Best Pricing</h1>
-                <p className='text-color text-sm '>Competitive rates on new, used, and <br />refurbished containers — buy or rent <br /> to fit your budget.</p>  
+                <p className='text-color  text-md'>Competitive rates on new, used, and <br />refurbished containers — buy or rent <br /> to fit your budget.</p>  
             </div>
               <div className=' flex flex-col box-1 border rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468]  p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center transition-colors'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 text-[#BCA468]   ">
@@ -39,7 +39,7 @@ const Service = () => {
 
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Flexible Rentals</h1>
-                <p className='text-color text-sm '>Short-term or long-term rental options <br />with no hidden fees. Scale up or down <br /> as you need.</p>  
+                <p className='text-color text-md '>Short-term or long-term rental options <br />with no hidden fees. Scale up or down <br /> as you need.</p>  
             </div>
         </div>
     </div>
