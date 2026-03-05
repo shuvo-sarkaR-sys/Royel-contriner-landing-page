@@ -125,7 +125,7 @@ Hammonds Plains, Nova Scotia, Canada</p>
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
         >
-         <h1 className="text-xl block md:hidden font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
+         <h1 className="text-xl block md:hidden font-semibold font-oswald">Feel free fillup this form. {"We'll"} get back to you soon.</h1>
 
           <select
             name="condition"
