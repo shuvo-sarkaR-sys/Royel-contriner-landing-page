@@ -67,7 +67,7 @@ setLoading(true);
 
 
   return (
-    <section id="contact-us" className="bg-white py-20 px-6">
+    <div id="contact-us" className="bg-white py-20 px-6">
          <h2 className="text-5xl font-oswald text-center font-bold mb-4">
             Get In <span className="text-[#BCA468] ">Touch</span>
           </h2>
@@ -233,6 +233,6 @@ className={`w-full text-black font-semibold py-3 rounded-lg transition
 
         </form>
       </div>
-    </section>
+    </div>
   );
 }
