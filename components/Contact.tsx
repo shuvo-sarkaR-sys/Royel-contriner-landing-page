@@ -4,33 +4,70 @@ import { Phone } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
+ 
   const [formData, setFormData] = useState({
+    condition: "",
+    containerSize: "",
+    purchaseTime: "",
     name: "",
-    email: "",
-    message: "",
     Phone: "",
+    email: "",
   });
+  const [loading, setLoading] = useState(false); // <-- loading state
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+
+   const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
+
+    const { name, value } = e.target;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+
     e.preventDefault();
+setLoading(true); 
+    try {
 
-    console.log(formData); // connect API here later
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    alert("Message Sent Successfully!");
-    setFormData({ name: "", email: "", Phone: "", message: "" });
+      const data = await res.json();
+
+      if (data.success) {
+        alert("Message Sent Successfully!");
+        setFormData({
+          condition: "",
+          containerSize: "",
+          purchaseTime: "",
+          name: "",
+          Phone: "",
+          email: "",
+        });
+      }
+
+    } catch (error) {
+      alert("Something went wrong");
+      console.error("Error sending message:", error);
+    } finally {
+      setLoading(false); // stop loading
+    }
+
   };
 
+
   return (
-    <section className="bg-white py-20 px-6">
+    <section id="contact-us" className="bg-white py-20 px-6">
          <h2 className="text-5xl font-oswald text-center font-bold mb-4">
             Get In <span className="text-[#BCA468] ">Touch</span>
           </h2>
@@ -84,64 +121,115 @@ Hammonds Plains, Nova Scotia, Canada</p>
         </div>
 
         {/* Right Side Form */}
-        <form
+       <form
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
         >
- 
-<select className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500" id="condition">
-  <option value="conditon" disabled selected  >Condition Preference?</option>
-  <option value="Used">Used,</option>
-  <option value="New">Brand New</option>
-  <option value="Modified">Modified</option>
-  <option value="Custom">Custom</option>
-  <option value="Refurbished">Refurbished</option>
-</select>
-      <input type="text" name="size" value={formData.name}
-      onChange={handleChange}
-      placeholder="What size container do you need?"
-      required
-       className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500"
 
-      />
-      <select className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500" name="" id="">
-        <option disabled selected value="When are you looking to purchase?">When are you looking to purchase?</option>
-        <option value="ASAP">ASAP</option>
-        <option value="Within 1 month">Within 1 month</option>
-        <option value="Within 3 Months">Within 3 Months</option>
-        <option value="Within 6 Months">Within 6 Months</option>
-        <option value="Just researching">Just Exploring</option>
-      </select>
-           
-             <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Full name"
-              required
-              className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500"
-            /> 
-                   <input type="tel" name="Phone" value={formData.Phone} onChange={handleChange} placeholder="Phone Number" className="w-full p-3 rounded-lg border  focus:outline-none focus:border-yellow-500  " />
+          <select
+            name="condition"
+            value={formData.condition}
+            onChange={handleChange}
+            required
+            className="w-full p-3 rounded-lg border focus:border-yellow-500"
+          >
+            <option value="">Condition Preference?</option>
+            <option value="Used">Used</option>
+            <option value="New">Brand New</option>
+            <option value="Modified">Modified</option>
+            <option value="Custom">Custom</option>
+            <option value="Refurbished">Refurbished</option>
+          </select>
 
-              <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-              required
-              className="w-full p-3 rounded-lg border focus:outline-none focus:border-yellow-500"
-            />
+          <input
+            type="text"
+            name="containerSize"
+            value={formData.containerSize}
+            onChange={handleChange}
+            placeholder="What size container do you need?"
+            required
+            className="w-full p-3 rounded-lg border focus:border-yellow-500"
+          />
 
-    
+          <select
+            name="purchaseTime"
+            value={formData.purchaseTime}
+            onChange={handleChange}
+            required
+            className="w-full p-3 rounded-lg border focus:border-yellow-500"
+          >
+            <option value="">When are you looking to purchase?</option>
+            <option value="ASAP">ASAP</option>
+            <option value="Within 1 month">Within 1 month</option>
+            <option value="Within 3 Months">Within 3 Months</option>
+            <option value="Within 6 Months">Within 6 Months</option>
+            <option value="Just researching">Just researching</option>
+          </select>
+
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Full name"
+            required
+            className="w-full p-3 rounded-lg border focus:border-yellow-500"
+          />
+
+          <input
+            type="tel"
+            name="Phone"
+            value={formData.Phone}
+            onChange={handleChange}
+            placeholder="Phone Number"
+            required
+            className="w-full p-3 rounded-lg border focus:border-yellow-500"
+          />
+
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Email"
+            required
+            className="w-full p-3 rounded-lg border focus:border-yellow-500"
+          />
 
           <button
             type="submit"
-            className="w-full bg-[#BCA468] text-black font-semibold py-3 rounded-lg hover:bg-yellow-600 transition"
-          >
-            Send Message
+            disabled={loading} 
+className={`w-full text-black font-semibold py-3 rounded-lg transition 
+              ${loading ? "bg-yellow-400 cursor-not-allowed" : "bg-[#BCA468] hover:bg-yellow-600"}`}          >
+           {loading ? (
+              <span className="flex justify-center items-center gap-2">
+                <svg
+                  className="animate-spin h-5 w-5 text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v8H4z"
+                  ></path>
+                </svg>
+                Sending...
+              </span>
+            ) : (
+              "Get A Quote"
+            )}
           </button>
+
         </form>
       </div>
     </section>
