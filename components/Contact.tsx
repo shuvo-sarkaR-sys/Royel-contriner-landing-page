@@ -91,7 +91,7 @@ Ready to get started? Send us a message and {"we'll "}provide a free quote withi
 <a href="https://maps.app.goo.gl/zoDh8sGK3isT8YNG9" target="_blank"><div>
     <h3 className="text-xl font-semibold">LOCATION</h3>
     <p className="text-gray-600">1467 Hammonds Plains Road
-Hammonds Plains, Nova Scotia, Canada</p>
+Hammonds Plains, Nova Scotia, Canada</p>    
 </div></a>
 </div>
                     <div className="flex gap-5">
