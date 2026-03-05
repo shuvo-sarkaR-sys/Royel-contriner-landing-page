@@ -88,16 +88,43 @@ Hammonds Plains, Nova Scotia, Canada</p>
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
         >
-          <div className="flex gap-5">
+ 
+<select className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500" id="condition">
+  <option value="conditon" disabled selected  >Condition Preference?</option>
+  <option value="Used">Used,</option>
+  <option value="New">Brand New</option>
+  <option value="Modified">Modified</option>
+  <option value="Custom">Custom</option>
+  <option value="Refurbished">Refurbished</option>
+</select>
+      <input type="text" name="size" value={formData.name}
+      onChange={handleChange}
+      placeholder="What size container do you need?"
+      required
+       className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500"
+
+      />
+      <select className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500" name="" id="">
+        <option disabled selected value="When are you looking to purchase?">When are you looking to purchase?</option>
+        <option value="ASAP">ASAP</option>
+        <option value="Within 1 month">Within 1 month</option>
+        <option value="Within 3 Months">Within 3 Months</option>
+        <option value="Within 6 Months">Within 6 Months</option>
+        <option value="Just researching">Just Exploring</option>
+      </select>
+           
              <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Name"
+              placeholder="Full name"
               required
               className="w-full p-3 rounded-lg  border focus:outline-none focus:border-yellow-500"
-            /> <input
+            /> 
+                   <input type="tel" name="Phone" value={formData.Phone} onChange={handleChange} placeholder="Phone Number" className="w-full p-3 rounded-lg border  focus:outline-none focus:border-yellow-500  " />
+
+              <input
               type="email"
               name="email"
               value={formData.email}
@@ -106,21 +133,8 @@ Hammonds Plains, Nova Scotia, Canada</p>
               required
               className="w-full p-3 rounded-lg border focus:outline-none focus:border-yellow-500"
             />
-          </div>
 
-          <input type="tel" name="Phone" value={formData.Phone} onChange={handleChange} placeholder="Phone Number" className="w-full p-3 rounded-lg border  focus:outline-none focus:border-yellow-500  " />
-
-          <div>
-             <textarea
-              rows={5}
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              placeholder="Your Message"
-              className="w-full p-3 rounded-lg  border  focus:outline-none focus:border-yellow-500"
-            />
-          </div>
+    
 
           <button
             type="submit"
