@@ -75,11 +75,11 @@ setLoading(true);
           <p className="text-gray-500 text-center text-lg mb-16">
 Ready to get started? Send us a message and {"we'll "}provide a free quote within 24 hours.
           </p>
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 ">
+      <div className="max-w-5xl mx-auto gap-14 grid md:grid-cols-2 ">
 
         {/* Left Side */}
         <div>
-         
+         <h1 className="text-5xl font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
 
           <div className="space-y-10 mt-14">
             <div className="flex gap-5">
