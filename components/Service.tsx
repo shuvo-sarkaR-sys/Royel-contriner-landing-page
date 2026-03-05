@@ -6,14 +6,14 @@ const Service = () => {
     <div className='py-20'>
         <h1 className='md:text-5xl text-4xl font-bold text-center '>WHY ROYAL RENTALS <span className='text-[#BCA468]'>BEST?</span></h1>
         <p className='text-lg text-color text-center mt-4'>{"We're Halifax's go-to for reliable, affordable container solutions."}</p>
-        <div className='md:px-20 px-7 pt-12 flex gap-10 justify-center flex-wrap '>
+        <div className='md:px-18 xl:px-20 px-7 pt-12 flex gap-8 justify-center flex-wrap '>
             <div className=' flex flex-col  box-1  rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468] border p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center transition-colors'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" w-8 text-[#BCA468]    ">
   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
 </svg>
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Quality Guaranteed</h1>
-                <p className='text-color text-md '>Every container is thoroughly inspected <br />to ensure it meets our high-quality <br /> standards before delivery.</p>  
+                <p className='text-color text-lg '>Every container is thoroughly inspected <br />to ensure it meets our high-quality <br /> standards before delivery.</p>  
             </div>
               <div className=' flex flex-col box-1  rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468] border p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center transition-colors'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-truck text-[#BCA468]" viewBox="0 0 16 16">
@@ -21,7 +21,7 @@ const Service = () => {
 </svg>
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Fast Delivery</h1>
-                <p className='text-color  text-md'>Local Halifax-based operations mean <br />faster turnaround and delivery across<br /> Nova Scotia.</p>  
+                <p className='text-color  text-lg'>Local Halifax-based operations mean <br />faster turnaround and delivery across<br /> Nova Scotia.</p>  
             </div>
               <div className=' flex flex-col box-1  rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468] border p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center  text-[#BCA468] transition-colors'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 text-[#BCA468]    ">
@@ -30,7 +30,7 @@ const Service = () => {
 
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Best Pricing</h1>
-                <p className='text-color  text-md'>Competitive rates on new, used, and <br />refurbished containers — buy or rent <br /> to fit your budget.</p>  
+                <p className='text-color  text-lg'>Competitive rates on new, used, and <br />refurbished containers — buy or rent <br /> to fit your budget.</p>  
             </div>
               <div className=' flex flex-col box-1 border rounded-xl border-[#fdf6e6] items-center text-center'>
                 <div className='bg-[#BCA468]  p-3 icon-1 rounded-full hover:bg-yellow-300 flex items-center justify-center transition-colors'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 text-[#BCA468]   ">
@@ -39,7 +39,7 @@ const Service = () => {
 
 </div>
                 <h1 className='text-2xl font-semibold mt-4 font-oswald'>Flexible Rentals</h1>
-                <p className='text-color text-md '>Short-term or long-term rental options <br />with no hidden fees. Scale up or down <br /> as you need.</p>  
+                <p className='text-color text-lg '>Short-term or long-term rental options <br />with no hidden fees. Scale up or down <br /> as you need.</p>  
             </div>
         </div>
     </div>
