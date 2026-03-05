@@ -75,13 +75,13 @@ setLoading(true);
           <p className="text-gray-500 text-center text-lg mb-16">
 Ready to get started? Send us a message and {"we'll "}provide a free quote within 24 hours.
           </p>
-      <div className="max-w-5xl mx-auto gap-14 grid md:grid-cols-2 ">
+      <div className="max-w-6xl mx-auto gap-12 grid md:grid-cols-2 ">
 
         {/* Left Side */}
         <div>
-         <h1 className="md:text-5xl text-2xl md:block hidden font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
+         <h1 className="md:text-5xl text-2xl md:block hidden mt-0 md:mt-5 font-semibold font-oswald">Feel free fillup this form. We'll get back to you soon.</h1>
 
-          <div className="space-y-10 mt-14">
+          <div className="space-y-10 md:mt-10 mt-0">
             <div className="flex gap-5">
                 <span className="py-2 px-3 text-center items-center flex bg-yellow-500/10 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-yellow-700">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
